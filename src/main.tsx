@@ -2,10 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
+const rootElement = document.getElementById('root') as HTMLElement
+const root = ReactDOM.createRoot(rootElement)
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
 )
